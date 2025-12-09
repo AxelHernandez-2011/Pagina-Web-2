@@ -35,7 +35,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav text-end">
-        <li class="nav-item"><a class="nav-link" href="#seccionQuienes">Quiénes somos</a></li>
+     
         <li class="nav-item"><a class="nav-link" href="#seccionAutismo">Qué es el autismo</a></li>
         <li class="nav-item"><a class="nav-link" href="#seccionServicios">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="#seccionEquipo">Nuestro equipo</a></li>
@@ -176,11 +176,18 @@ window.addEventListener('scroll', function() {
 <!-- NUESTRO EQUIPO -->
 <section id="seccionEquipo" style="background: #F4F7EB;">
   <div class="container py-5" style="border-top:3px solid #C5CB2E;">
-    <h2 class="text-center mb-5" style="color:#4A6B2F; font-weight:700; letter-spacing:1px;">Nuestro Equipo</h2>
-    
-    <div class="team-row" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:30px;">
 
-      <!-- Equipo -->
+    <h2 class="text-center mb-5" style="color:#4A6B2F; font-weight:700; letter-spacing:1px;">
+      Nuestro Equipo
+    </h2>
+
+    <!-- Primera fila -->
+    <div class="team-row" style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    ">
       <div class="team-member card-team">
         <img src="img/Naye.jpg" class="img-fluid rounded-circle team-img">
         <h3 class="team-name">Nayeli</h3>
@@ -204,17 +211,17 @@ window.addEventListener('scroll', function() {
         <h3 class="team-name">Flor Tlamitzi</h3>
         <p class="team-role">Terapeuta Ocupacional</p>
       </div>
-
-      <div class="team-member card-team">
-        <img src="img/Kari.jpg" class="img-fluid rounded-circle team-img">
-        <h3 class="team-name">Karina</h3>
-        <p class="team-role">Terapeuta Físico</p>
-      </div>
-
     </div>
 
-    <!-- Última fila centrada -->
-    <div class="center-last-row">
+    <!-- Segunda fila centrada -->
+    <div class="center-last-row" style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    ">
       <div class="team-member card-team">
         <img src="img/Bety.jpg" class="img-fluid rounded-circle team-img">
         <h3 class="team-name">Beatriz</h3>
@@ -226,10 +233,18 @@ window.addEventListener('scroll', function() {
         <h3 class="team-name">Estephanie</h3>
         <p class="team-role">Asistente de dirección</p>
       </div>
+
+      <div class="team-member card-team">
+        <img src="img/Kari.jpg" class="img-fluid rounded-circle team-img">
+        <h3 class="team-name">Karina</h3>
+        <p class="team-role">Terapeuta Físico</p>
+      </div>
     </div>
 
   </div>
 </section>
+
+
 
 
 
@@ -568,5 +583,3 @@ window.addEventListener('load', animateElements);
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </html>
-
-
