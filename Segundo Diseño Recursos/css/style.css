@@ -1109,3 +1109,188 @@ footer {
     transition: all 0.4s ease;
   }
 
+
+  /* Animación de aparición suave */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Tarjetas profesionales con hover */
+  .card-efecto {
+    transition: all 0.35s ease-in-out;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.10);
+    padding: 25px;
+  }
+
+  .card-efecto:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.20);
+  }
+
+  /* Títulos con efecto zoom */
+  .titulo-efecto {
+    transition: transform 0.5s ease, letter-spacing 0.3s ease;
+  }
+
+  .titulo-efecto:hover {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+  }
+
+  /* Separadores decorativos */
+  .titulo-efecto::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #C5CB2E;
+    margin: 10px auto 0;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+
+  .titulo-efecto:hover::after {
+    width: 120px;
+  }
+
+
+
+
+  /* MOVIMIENTO AL APARECER */
+  .servicio-box {
+    animation: fadeSlide 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .cards-move {
+    animation: fadeUp 1.2s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* TITULOS */
+  .green-title {
+    color: #C5CB2E;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .3px;
+  }
+
+  /* BORDES VERDES */
+  .green-img {
+    border: 3px solid #C5CB2E;
+    transition: all .4s ease;
+  }
+
+  /* CARD VERDE */
+  .green-card {
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    transition: all .35s ease;
+  }
+
+  /* EFECTO HOVER PRO */
+  .green-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+    background: #F7FFF4;
+  }
+
+  .green-card:hover .green-img {
+    border-color: #C5CB2E;
+    transform: scale(1.05);
+  }
+
+
+/* =========================
+   MOBILE PREMIUM
+========================= */
+@media (max-width: 991px) {
+
+  /* SECCIÓN GENERAL */
+  .servicios-section {
+    padding: 60px 20px;
+  }
+
+  /* CAJA DE TEXTO */
+  .servicio-box {
+    padding: 35px 28px;
+    text-align: center;
+    border-left: none;
+    border-top: 6px solid #C5CB2E;
+  }
+
+  .servicio-title {
+    font-size: 26px;
+  }
+
+  .servicio-list {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  /* TARJETAS */
+  .cards-move {
+    margin-top: 30px;
+  }
+
+  .card-servicio {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  /* IMÁGENES */
+  .card-servicio img {
+    border-radius: 16px;
+    animation: none; /* más elegante en mobile */
+  }
+
+  .card-servicio h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+/* =========================
+   MOBILE PEQUEÑO
+========================= */
+@media (max-width: 575px) {
+
+  /* TARJETAS A UNA COLUMNA */
+  .cards-move .col-6 {
+    width: 100%;
+  }
+
+  /* ESPACIADO */
+  .servicio-box {
+    margin-bottom: 35px;
+  }
+
+  .card-servicio {
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  }
+
+  /* TITULOS */
+  .servicio-title {
+    font-size: 24px;
+  }
+}

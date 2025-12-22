@@ -35,7 +35,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav text-end">
-     
+        <li class="nav-item"><a class="nav-link" href="#seccionQuienes">Quiénes somos</a></li>
         <li class="nav-item"><a class="nav-link" href="#seccionAutismo">Qué es el autismo</a></li>
         <li class="nav-item"><a class="nav-link" href="#seccionServicios">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="#seccionEquipo">Nuestro equipo</a></li>
@@ -115,58 +115,85 @@ window.addEventListener('scroll', function() {
 </header>
 
 <!-- TERAPIAS -->
-<section id="seccionServicios" style="background: linear-gradient(135deg, #D9E59F, #B3D4E0);">
+<section id="seccionServicios" style="background: linear-gradient(135deg, #DDEBCF 0%, #C5E0D0 100%); padding: 90px 0;">
   <div class="container">
 
-    <!-- Sub-sección Terapias dentro de Servicios -->
-    <div class="py-5 terapias-row">
-      <div class="row align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-between">
 
-        <!-- Texto a la izquierda -->
-        <div class="col-md-5 terapias-text p-4 rounded" style="background: rgba(255,255,255,0.9); box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
-          <h3 class="terapias-title" style="color:#2F4353; font-weight:700; margin-bottom:20px;">Terapias</h3>
-          <ul class="terapias-list" style="color:#4A6B2F; font-weight:500; list-style-type: disc; padding-left:20px;">
-            <li>Terapia sensorial</li>
-            <li>Terapia Ocupacional</li>
-            <li>Terapia de Alimentación</li>
-            <li>Terapia de Lenguaje</li>
-            <li>Terapia de Aprendizaje</li>
-            <li>Taller de Habilidades Sociales</li>
-            <li>Inclusión Educativa</li>
-          </ul>
-        </div>
+      <!-- TEXTO IZQUIERDO AL MISMO NIVEL -->
+      <div class="col-lg-5 p-5 shadow-lg bg-white rounded-4 servicio-box"
+        style="border-left: 6px solid #C5CB2E;">
 
-        <!-- Cards a la derecha (2x2) -->
-        <div class="col-md-7 terapias-cards d-flex flex-wrap gap-4 justify-content-center mt-4 mt-md-0">
+        <h3 style="color:#C5CB2E; font-weight:800; font-size:30px; margin-bottom:22px;">
+          Terapias Especializadas
+        </h3>
 
-          <div class="producto-card efecto-card text-center col-6 p-3 rounded shadow-card" style="background:#ffffff;">
-            <img src="img/TERAPIA FLOR.jpg" class="img-fluid rounded" style="border: 3px solid #4A90E2; transition: all 0.3s;">
-            <h4 style="color:#2F4353; margin-top:15px;">Terapia Ocupacional</h4>
+        <ul style="
+          color:#3B3B3B;
+          font-weight:600; 
+          font-size:17px;
+          line-height:1.9;
+          padding-left:20px;
+        ">
+          <li>Terapia sensorial</li>
+          <li>Terapia Ocupacional</li>
+          <li>Terapia de Alimentación</li>
+          <li>Terapia de Lenguaje</li>
+          <li>Terapia de Aprendizaje</li>
+          <li>Taller de Habilidades Sociales</li>
+          <li>Inclusión Educativa</li>
+        </ul>
+
+      </div>
+
+      <!-- TARJETAS A LA DERECHA -->
+      <div class="col-lg-7 mt-5 mt-lg-0">
+
+        <div class="row g-4 justify-content-center cards-move" style="margin-top:50px;">
+
+          <!-- CARD 1 -->
+          <div class="col-6">
+            <div class="card-servicio green-card p-4 text-center rounded-4 bg-white">
+              <img src="img/TERAPIA FLOR.jpg" class="img-fluid rounded-3 green-img">
+              <h4 class="green-title">Terapia Ocupacional</h4>
+            </div>
           </div>
 
-          <div class="producto-card efecto-card text-center col-6 p-3 rounded shadow-card" style="background:#ffffff;">
-            <img src="img/TERAPIABETTY.jpg" class="img-fluid rounded" style="border: 3px solid #4A90E2; transition: all 0.3s;">
-            <h4 style="color:#2F4353; margin-top:15px;">Terapia de Lenguaje y Aprendizaje</h4>
+          <!-- CARD 2 -->
+          <div class="col-6">
+            <div class="card-servicio green-card p-4 text-center rounded-4 bg-white">
+              <img src="img/TERAPIABETTY.jpg" class="img-fluid rounded-3 green-img">
+              <h4 class="green-title">Terapia de Lenguaje y Aprendizaje</h4>
+            </div>
           </div>
 
-          <div class="producto-card efecto-card text-center col-6 p-3 rounded shadow-card" style="background:#ffffff;">
-            <img src="img/TERAPIAKARI.jpg" class="img-fluid rounded" style="border: 3px solid #4A90E2; transition: all 0.3s;">
-            <h4 style="color:#2F4353; margin-top:15px;">Terapia de Lenguaje</h4>
+          <!-- CARD 3 -->
+          <div class="col-6">
+            <div class="card-servicio green-card p-4 text-center rounded-4 bg-white">
+              <img src="img/TERAPIAKARI.jpg" class="img-fluid rounded-3 green-img">
+              <h4 class="green-title">Terapia de Lenguaje</h4>
+            </div>
           </div>
 
-          <div class="producto-card efecto-card text-center col-6 p-3 rounded shadow-card" style="background:#ffffff;">
-            <img src="img/TERAPIANAYE.jpg" class="img-fluid rounded" style="border: 3px solid #4A90E2; transition: all 0.3s;">
-            <h4 style="color:#2F4353; margin-top:15px;">Terapia Motriz</h4>
+          <!-- CARD 4 -->
+          <div class="col-6">
+            <div class="card-servicio green-card p-4 text-center bg-white rounded-4">
+              <img src="img/TERAPIANAYE.jpg" class="img-fluid rounded-3 green-img">
+              <h4 class="green-title">Terapia Motriz</h4>
+            </div>
           </div>
 
         </div>
 
       </div>
+
     </div>
-    <!-- Fin de sub-sección Terapias -->
 
   </div>
 </section>
+
+
+
 
 
 
@@ -244,6 +271,91 @@ window.addEventListener('scroll', function() {
   </div>
 </section>
 
+<section id="seccionQuienes" style="background:#F4F7EB;">
+  <div class="container py-5 fade-up" style="border-top:3px solid #C5CB2E;">
+
+    <!-- Título principal -->
+    <h2 class="text-center mb-5 titulo-efecto"
+        style="color:#4A6B2F; font-weight:800; letter-spacing:1px;">
+      ¿Quiénes Somos?
+    </h2>
+
+    <!-- Cuadros de Misión y Visión -->
+    <div class="fade-up"
+      style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:35px; margin-bottom:80px;">
+      
+      <div class="card-efecto">
+        <h3 style="color:#4A6B2F; font-weight:700;">¿Cuál es nuestra misión?</h3>
+        <p style="color:#444; font-size:15px; line-height:1.6;">
+          Somos una Asociación Civil enfocada en brindar atención especializada a personas dentro
+          del Espectro Autista y a sus familias, buscando mejorar su calidad de vida, potenciar sus
+          habilidades y promover la inclusión en distintos contextos educativos y sociales dentro del estado.
+        </p>
+      </div>
+
+      <div class="card-efecto">
+        <h3 style="color:#4A6B2F; font-weight:700;">¿Cuál es nuestra visión?</h3>
+        <p style="color:#444; font-size:15px; line-height:1.6;">
+          Ser una asociación reconocida a nivel nacional por nuestra aportación a la inclusión,
+          intervención y capacitación en temas del Espectro Autista, así como por el acompañamiento 
+          a familias y la formación de profesionales en diversos ámbitos de la sociedad.
+        </p>
+      </div>
+    </div>
+
+    <!-- Título de valores -->
+    <h2 class="text-center mb-5 fade-up titulo-efecto"
+        style="color:#4A6B2F; font-weight:800; letter-spacing:1px;">
+      Nuestros Valores
+    </h2>
+
+    <!-- Tres tarjetas de valores -->
+    <div class="fade-up"
+      style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:35px;">
+      
+      <div class="card-efecto">
+        <h3 style="color:#4A6B2F; font-weight:700;">Honestidad</h3>
+        <p style="color:#444; font-size:15px; line-height:1.6;">
+          Actuamos de manera transparente, justa y con integridad en cada intervención y acompañamiento,
+          brindando un servicio humano y respetuoso hacia las personas con TEA y sus familias.
+        </p>
+      </div>
+
+      <div class="card-efecto">
+        <h3 style="color:#4A6B2F; font-weight:700;">Inclusión</h3>
+        <p style="color:#444; font-size:15px; line-height:1.6;">
+          Defendemos y promovemos la participación activa de todas las personas, fomentando entornos donde
+          se valore la diversidad funcional y se respeten las diferencias.
+        </p>
+      </div>
+
+      <div class="card-efecto">
+        <h3 style="color:#4A6B2F; font-weight:700;">Trabajo en equipo</h3>
+        <p style="color:#444; font-size:15px; line-height:1.6;">
+          Unimos las habilidades de cada integrante de la asociación para promover el desarrollo profesional,
+          la colaboración, la convivencia sana y un equilibrio entre la vida laboral y familiar.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<script>
+  /* Activar animación en scroll */
+  const elementos = document.querySelectorAll('.fade-up');
+
+  function activarAnimacion() {
+    const trigger = window.innerHeight * 0.85;
+    elementos.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < trigger) el.classList.add('visible');
+    });
+  }
+
+  window.addEventListener('scroll', activarAnimacion);
+  window.addEventListener('load', activarAnimacion);
+</script>
 
 
 
@@ -263,7 +375,7 @@ window.addEventListener('scroll', function() {
           El autismo, o trastorno del espectro autista (TEA), es un trastorno del neurodesarrollo que afecta principalmente la comunicación, la interacción social y la conducta. Las personas con autismo suelen mostrar dificultades para comprender las normas sociales, expresar emociones y mantener relaciones, así como intereses restringidos o comportamientos repetitivos, que varían en intensidad de un individuo a otro.
         </p>
         
-        <img src="img/signosAT.jpg" class="img-fluid rounded mt-3 shadow-img" alt="Explicación visual">
+        <img src="img/autismo2.jpg" class="img-fluid rounded mt-3 shadow-img" alt="Explicación visual">
       </div>
     </div>
   </div>
@@ -391,12 +503,15 @@ window.addEventListener('load', aparecerCajas);
 
         <!-- Redes Sociales -->
         <div class="mt-3 d-flex align-items-center" style="gap: 16px;">
-          <a href="https://www.facebook.com/m6.33technology/" target="_blank" class="red-social">
+          <a href="https://www.facebook.com/AutismoTlaxcala/" target="_blank" class="red-social">
             <img src="img/pngegg.png" width="42">
           </a>
 
           <a href="https://www.instagram.com/explore/locations/109000347550823/centro-autismo-tlaxcala-ac/" target="_blank" class="red-social">
             <img src="img/pngegg (1).png" width="42">
+          </a>
+          <a href="https://www.tiktok.com/@autismotlaxcala" target="_blank" class="red-social">
+            <img src="img/pngegg (3).png" width="42">
           </a>
         </div>
 
